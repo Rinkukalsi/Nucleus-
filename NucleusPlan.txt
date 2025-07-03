@@ -1,0 +1,245 @@
+Detailed Design Plan for Nucleus
+Initial User Onboarding
+Welcome Flow Questions
+
+Personal Details
+
+Name
+Time zone
+Preferred working hours
+
+
+Productivity Profile
+
+"What's your primary focus?" (Work/Personal/Study/Multiple)
+"When are you most productive?" (Morning/Afternoon/Evening)
+"What's your biggest productivity challenge?"
+
+Time management
+Task organization
+Focus and concentration
+Project planning
+
+
+
+
+Goal Setting
+
+"What do you want to achieve with Nucleus?"
+"How many hours per day do you want to focus?"
+"What types of tasks do you usually handle?"
+
+
+
+Visual and Interaction Design
+Home Layout (Nucleus View)
+
+Command Center (Top Left)
+
+Floating search/command bar ("/")
+Glowing pulse animation when idle
+Quick action buttons orbit around
+Time/date prominently displayed
+Current focus task highlighted
+Pomodoro timer with visual countdown
+
+
+Analytics Hub (Top Right)
+
+3D-rotating activity heatmap
+Floating metric cards
+Pulse animations for real-time updates
+Color intensity shows productivity levels
+Expandable graphs and charts
+Quick insights tooltips
+
+
+Task Space (Left Middle)
+
+Card-based task visualization
+Priority indicators with subtle animation
+Drag-and-drop organization
+Status changes with fluid transitions
+Time tracking indicators
+Progress bars with liquid animation
+
+
+Journal Realm (Middle)
+
+Paper-like texture
+Smooth typing animation
+Tag cloud with dynamic sizing
+Mood indicators with color themes
+Auto-save ripple effect
+Expandable media attachments
+
+
+Mood Monitor (Bottom Left)
+
+Interactive emotion wheel
+Color gradients reflect moods
+Particle effects for interactions
+Timeline visualization
+Quick-select emoji reactions
+Mood patterns display
+
+
+Interaction Behaviors
+
+Card Expansion
+
+Smooth scale animation
+Background blur effect
+Other cards gracefully minimize
+Content fade-in
+Quick collapse gesture
+Position memory
+
+
+Navigation
+
+Fluid transitions between sections
+Spatial awareness indicators
+Breadcrumb trail
+Mini-map navigation
+History dots
+Quick return button
+
+
+State Changes
+
+Loading: Particle shimmer
+Saving: Ripple effect
+Error: Gentle shake
+Success: Soft pulse
+Update: Glow highlight
+Delete: Fade with trail
+
+
+
+Feature Details
+Command Center
+
+Quick Commands
+
+/task - Create new task
+/note - Quick note
+/mood - Set mood
+/timer - Start timer
+/find - Universal search
+/focus - Enter focus mode
+
+
+Time Management
+
+Customizable Pomodoro
+Break reminders
+Time tracking
+Schedule viewer
+Calendar integration
+Time zone display
+
+
+
+Task Management
+
+Task Creation
+
+Quick add
+Detailed form
+Voice input
+Template selection
+Priority setting
+Time estimation
+
+
+Organization
+
+Custom categories
+Smart lists
+Tags system
+Priority levels
+Due dates
+Dependencies
+
+
+
+Journal System
+
+Entry Types
+
+Daily reflections
+Project notes
+Meeting minutes
+Ideas bank
+Goals tracker
+Gratitude log
+
+
+Features
+
+Rich text formatting
+Image/file attachments
+Templates
+Tags
+Search
+Export options
+
+
+
+Analytics
+
+Productivity Metrics
+
+Focus time
+Task completion rate
+Productivity score
+Time distribution
+Project progress
+Habit streaks
+
+
+Mood Analytics
+
+Emotion patterns
+Productivity correlation
+Time-based trends
+Activity impact
+Energy levels
+Focus quality
+
+-----------
+
+Nucleus Technical Implementation Plan
+1. Core Technology Stack
+Frontend
+
+Framework: React 18+ with TypeScript
+Build Tool: Vite (for faster development)
+State Management:
+
+Zustand (global state)
+React Query (server state)
+Local Storage (persistence)
+
+
+
+UI Components & Styling
+
+Base: shadcn/ui
+CSS: Tailwind CSS
+Icons: Lucide React
+Animations: Framer Motion
+Charts: Recharts
+Rich Text: Tiptap
+Date Handling: date-fns
+Form Management: React Hook Form + Zod
+
+Backend (Supabase)
+
+Authentication
+PostgreSQL Database
+Realtime Subscriptions
+Edge Functions
+Storage
+Row Level Security (RLS)
